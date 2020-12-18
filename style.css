@@ -24,6 +24,12 @@ body {
   );
 }
 
+.main-button {
+  width: 500px;
+  height: fit-content;
+  background-color: var(--brendas-lips);
+}
+
 .btn {
   font-size: 20px;
   background: var(--purplish-blue);
@@ -31,7 +37,7 @@ body {
   margin: 10px;
   border-radius: 5px;
   outline: none;
-  font-size: 86px;
+  font-size: 84px;
 }
 
 .btn:active {
