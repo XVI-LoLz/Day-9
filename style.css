@@ -1,0 +1,39 @@
+:root {
+  --purplish-blue: #4f518c;
+  --grey: #a9bcd0;
+  --grey-anatomy: #a9bcd0;
+  --ocean-blue: #58a4b0;
+  --brendas-lips: #bc4b51;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  height: 100vh;
+  background: rgb(237, 253, 36);
+  background: linear-gradient(
+    18deg,
+    rgba(237, 253, 36, 1) 49%,
+    rgba(252, 69, 189, 1) 100%
+  );
+}
+
+.btn {
+  font-size: 20px;
+  background: var(--purplish-blue);
+  color: pink;
+  margin: 10px;
+  border-radius: 5px;
+  outline: none;
+  font-size: 86px;
+}
+
+.btn:active {
+  transform: scale(0.96);
+}
