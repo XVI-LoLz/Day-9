@@ -7,15 +7,12 @@ const urls = [
   "https://z16th-bucket.s3-us-west-1.amazonaws.com/fcc-drum-machine/Tom.wav",
 ];
 
-const audio = new Audio();
-
 const buttons = document.querySelectorAll(".btn");
-
-console.log(buttons);
 
 const setupAudios = () => {
   buttons.forEach((button, i) =>
     button.addEventListener("click", () => {
+      const audio = new Audio();
       audio.src = urls[i];
       audio.play();
     })
