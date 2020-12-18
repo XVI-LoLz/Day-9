@@ -22,27 +22,12 @@ const buttons = document.querySelectorAll(".btn");
 console.log(buttons);
 
 const setupAudios = () => {
-  buttons.forEach((button, i) => {
-    if (i === 0) {
-      button.addEventListener("click", () => shaker.play());
-      console.log("playing audio");
-    }
-    if (i === 1) {
-      button.addEventListener("click", () => clap.play());
-    }
-    if (i === 2) {
-      button.addEventListener("click", () => conga.play());
-    }
-    if (i === 3) {
-      button.addEventListener("click", () => hihat.play());
-    }
-    if (i === 4) {
-      button.addEventListener("click", () => stick.play());
-    }
-    if (i === 5) {
-      button.addEventListener("click", () => tom.play());
-    }
-  });
+  buttons[0].addEventListener("click", () => shaker.play());
+  buttons[1].addEventListener("click", () => clap.play());
+  buttons[2].addEventListener("click", () => conga.play());
+  buttons[3].addEventListener("click", () => hihat.play());
+  buttons[4].addEventListener("click", () => stick.play());
+  buttons[5].addEventListener("click", () => tom.play());
 };
 
 setupAudios();
